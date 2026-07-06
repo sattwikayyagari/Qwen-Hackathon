@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF Reader</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/5.4.149/pdf_viewer.min.css">
+  <style>
+    :root {
+      color-scheme: light;
+    }
+  </style>
+</head>
+<body>
+  <input type="file" accept="application/pdf" id="pdfInput" />
+  <div style="position: relative;">
+    <canvas id="pdfCanvas"></canvas>
+    <div id="textLayer" class="textLayer" style="position: absolute; top:0; left:0;"></div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
